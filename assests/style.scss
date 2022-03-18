@@ -10,8 +10,12 @@ $header-color: whitesmoke;
         background-color: #000;
         color: $header-color;
         .top-header  {
-
             .glitch {
+                @media  screen and (max-width: 575px) {
+                    position: relative;
+                    top: 0;
+                    left: 60px;
+                }
                 color:#fff;
                 font-family: 'Poppins', sans-serif;
                 font-weight: 500;
@@ -69,6 +73,12 @@ $header-color: whitesmoke;
                 display: inline-block;
                 color: white;
                 padding-top: 30px;
+
+                @media  screen and (max-width: 575px) {
+                    text-align: right;
+                    padding-top: 0px;
+                    margin-bottom: 15px;
+                }
             }
 
         }
@@ -111,15 +121,65 @@ $header-color: whitesmoke;
         }
     }
     .about {
-        img {
-            width: 30%;
-            height: 85%;
+        text-align: center;
+        .left-about {
+            img {
+                border-radius: 300px;
+                width: 300px;
+                height: 300px;
+            }
+        }
+        pre {
+            margin-top: 75px;
+            font-family: "Robot", sans-serif;
         }
     }
 
     .works {
         background-color: black;
         color: white;
+        .left-side-work {
+            a {
+                color: #22e1ff;
+            }
+        }
+        .right-side-work {
+            text-align: right;
+            img {
+                height: 250px;
+            }
+        }
+
+        .done {
+            color: #62fa62;
+        }
+        .support {
+            color: #ffbc51;
+        }
+        .in-developing {
+            color: #ff4242;
+        }
+    }
+
+    .contacts {
+
+
+        ul {
+            li {
+                display: inline-block;
+                margin: 15px;
+            }
+            list-style-type: none;
+            .fa-vk {
+                color: #2525ff;
+            }
+            .fa-instagram {
+                color: #c600c6;
+            }
+            .fa-twitter {
+                color: #1494ff;
+            }
+        }
     }
     
     footer {
@@ -150,3 +210,5 @@ $header-color: whitesmoke;
         }
     }
 }
+
+

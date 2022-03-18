@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assests/style.css">
-
     <link rel="apple-touch-icon" sizes="57x57" href="assests/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assests/img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assests/img/favicon/apple-icon-72x72.png">
@@ -30,14 +29,16 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assests/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/cc09161a49.js" crossorigin="anonymous"></script>
+    <script src="assests/js/printing.js"></script>
 
 </head>
 <body>
     <div class="container-fluid">
-        <header class="row">
+        <header class="row" id="header-id">
             <div class="row top-header">
-                <h1 class="col-8 glitch">Sava</h1>
-                <div class="col-4 icons">
+                <h1 class="col-12 col-sm-4 glitch">Sava</h1>
+                <div class="col-12 col-sm-8 icons">
                     <a href="https://github.com/the-sava"><i class="bi-github"></i></a>
                     <a href="https://t.me/the_savaa"><i class="bi-telegram"></i></a>
                     <a href="#"><i class="bi-instagram"></i></a>
@@ -48,29 +49,72 @@
             </div>
         </header>
         <nav class="row">
-            <div class="col-6 mx-auto navbar">
-                <a href="#">Главная</a>
-                <a href="#">Обо мне</a>
-                <a href="#">Работы</a>
-                <a href="#">Контакты</a>
+            <div class="col-12 col-sm-8 col-md-5 mx-auto navbar">
+                <a href="#header-id">Главная</a>
+                <a href="#about-id">Обо мне</a>
+                <a href="#works-id">Работы</a>
+                <a href="#contacts-id">Контакты</a>
             </div>
         </nav>
-        <section class="row about">
+        <section class="row about" id="about-id">
             <h2 class ="col-12">Обо мне</h2>
-            <div class="col-8 left-about">
-                <img class="img-fluid rounded" src="assests/img/myPhoto.jpg" alt="Sava">
+            <div class="col-6 left-about">
+                <img class="mx-auto" src="assests/img/myPhoto.jpg" alt="Sava">
             </div>
-            <div class="col-4 right-about">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores aspernatur delectus distinctio doloribus eos esse expedita hic in ipsa ipsam labore nam nesciunt perferendis recusandae, repudiandae sint sunt vitae.</p>
+            <div class="col-6 right-about">
+                <pre></pre>
             </div>
         </section>
-        <section class="row works">
+        <section class="row works" id="works-id">
             <h2 class ="col-12">Мои работы</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquam aliquid aut blanditiis dicta doloremque dolorum explicabo harum impedit iste laborum libero modi natus provident quaerat, quam qui quis similique sint sit vel velit vitae. Accusantium asperiores aspernatur autem commodi consequatur deleniti deserunt dolore doloribus dolorum eaque eligendi inventore, ipsam laborum minus molestiae non nulla odio officia officiis optio perferendis porro quam, quos repudiandae sed sequi vero. Asperiores consectetur distinctio doloremque dolores explicabo molestiae, nostrum sit tempora totam voluptas. Amet animi cumque, dolorem facere numquam placeat provident quaerat quibusdam quod recusandae repudiandae suscipit tempore totam ut veritatis vitae voluptate.</p>
+            <div class="works-content">
+                <div class="row work">
+                    <div class="col-7 left-side-work">
+                        <h3>Интернет-магазин компьютерных кресел</h3>
+                        <p><strong>Статус разработки: </strong><span class="support">поддержка</span></p>
+                        <p><strong>Описание проекта:</strong> Данный проект разрабатывался в течении месяца. На разработку дизайна ушла 1 неделя, после чего реализовывалась функциональность интернет-магазина. Стек технологий применяемый для разработки: HTML/CSS/JS/jQuery/PHP. Данный интернет-магазин использует CMS NetCat. Проект находится на стадии поддержки: добавляется новая функциональность и возможности.</p>
+                        <p><strong>Ссылка:</strong> <a href="https://www.kompyuternye-kresla.ru">kompyuternye-kresla.ru</a></p>
+                    </div>
+                    <div class="col-5 right-side-work">
+                        <img class="img-fluid rounded" src="assests/img/works/kk.png" alt="Интернет-магазин компьютерных кресел">
+                    </div>
+                </div>
+                <hr>
+                <div class="row work">
+                    <div class="col-7 left-side-work">
+                        <h3>Интернет-магазин офисных кресел</h3>
+                        <p><strong>Статус разработки: </strong><span class="support">поддержка</span></p>
+                        <p><strong>Описание проекта:</strong> Данный проект разрабатывался в течении 3 недель. На разработку дизайна ушла 1 неделя, после чего реализовывалась функциональность интернет-магазина. Стек технологий применяемый для разработки: HTML/CSS/JS/jQuery/PHP. Данный интернет-магазин использует CMS NetCat. Проект находится на стадии поддержки: добавляется новая функциональность и возможности.</p>
+                        <p><strong>Ссылка:</strong> <a href="https://www.ofisnye-kresla-stulja.ru">ofisnye-kresla-stulja.ru</a></p>
+                    </div>
+                    <div class="col-5 right-side-work">
+                        <img class="img-fluid rounded" src="assests/img/works/ok.png" alt="Интернет-магазин офисных кресел">
+                    </div>
+                </div>
+                <hr>
+                <div class="row work">
+                    <div class="col-7 left-side-work">
+                        <h3>Сайт любительской мини-футбольной лиги</h3>
+                        <p><strong>Статус разработки: </strong><span class="support">поддержка</span></p>
+                        <p><strong>Описание проекта:</strong> Данный проект находится в стадии разработки. На данный момент разработан основной дизайн. </p>
+                        <p><strong>Ссылка:</strong> <a href="https://www.мини-футбол.москва">https://www.мини-футбол.москва</a></p>
+                    </div>
+                    <div class="col-5 right-side-work">
+                        <img class="img-fluid rounded" src="assests/img/works/mf.png" alt="Сайт для любительской мини-футбольной лиги">
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="row contacts">
+        <section class="row contacts" id="contacts-id">
             <h2 class ="col-12">Контакты</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deserunt dolorem eius error, fugit iusto magni nesciunt rem. Ab ad architecto doloremque ea eius error expedita fuga id impedit in incidunt ipsa labore laboriosam, laudantium libero maxime minus perferendis, placeat repellendus tempore tenetur vel voluptatum! Blanditiis error eum magni neque odio odit reprehenderit sequi? Accusamus ad aliquid amet, cupiditate, debitis eos eum eveniet ex laboriosam mollitia nemo nisi omnis quasi quisquam ratione, repellat sed sit veritatis? Ad, aspernatur atque autem consequuntur distinctio eveniet ex excepturi ipsam ipsum laborum molestiae nam officia optio quasi quibusdam tempora unde voluptates? Asperiores, vitae, voluptatem?</p>
+            <p>По вопросам сотрудничества писать на электронную почту: <a href="mailto:therealsava@icloud.com">therealsava@icloud.com</a></p>
+            <p>Также я доступен в социальных сетях:</p>
+            <ul>
+                <li><a href=""><i class="fa fa-vk fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
+
+            </ul>
         </section>
         <footer class="row">
             <span class="tag">Developed BY <a href="http://the-sava.ru">Sava</a></span>
